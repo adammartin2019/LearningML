@@ -73,3 +73,13 @@ plt.ylabel('Petal width [cm]')
 plt.legend(loc='upper left')
 plt.tight_layout()
 plt.show()
+
+
+from sklearn import tree
+feature_names = ["Sepal Length", "Sepal Width", "Petal Length", "Petal Width"]
+
+tree.plot_tree(tree_model, 
+               feature_names=feature_names,
+               filled=True)
+
+plt.show()
